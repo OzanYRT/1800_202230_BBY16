@@ -6,7 +6,7 @@
 
 ## General Info
 This browser based web application to ...
-	*Hi my name is Ozan.. I am excited about this project becouse we get to do it as a team!
+	* Hi my name is Ozan.. I am excited about this project becouse we get to do it as a team!
 ## Technologies
 Technologies used for this project:
 * HTML, CSS
