@@ -6,6 +6,8 @@
 
 ## General Info
 This browser based web application to ...
+
+* Hello my name is Ash. Good night
 	
 ## Technologies
 Technologies used for this project:
