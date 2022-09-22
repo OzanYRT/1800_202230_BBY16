@@ -1,0 +1,30 @@
+[33mcommit 4d10d5cc93621d5114cfdd7d61e8f4faa009c5bf[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 0dda817 a9fb736
+Author: Ozan Rocks <ozanyurtiisigi@gmail.com>
+Date:   Wed Sep 21 11:14:12 2022 -0700
+
+    Fixed a conflict
+
+[33mcommit 0dda817ade753e28b155d129406387d2205e6f8c[m
+Author: Ozan Rocks <ozanyurtiisigi@gmail.com>
+Date:   Wed Sep 21 11:12:03 2022 -0700
+
+    Fixed the formatting for the bullet point
+
+[33mcommit a9fb736d21038942a5f8bcdbbd898fc9e6a5ac59[m
+Author: Samuel Chua <schua15@my.bcit.ca>
+Date:   Wed Sep 21 11:04:52 2022 -0700
+
+    Added one line intro to README file for Samuel
+
+[33mcommit b8097cfa48aca4153353a1592b4648492a6ff1d9[m
+Author: Ozan Rocks <ozanyurtiisigi@gmail.com>
+Date:   Wed Sep 21 10:56:56 2022 -0700
+
+    Added one line intro to README file for Ozan
+
+[33mcommit 57440cf2b5077a482c08be9333dc3c74ec186aaf[m
+Author: wenttoofar <110328994+wenttoofar@users.noreply.github.com>
+Date:   Wed Sep 21 10:34:47 2022 -0700
+
+    Initial commit
