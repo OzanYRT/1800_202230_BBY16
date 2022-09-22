@@ -6,7 +6,7 @@
 
 ## General Info
 This browser based web application to ...
-
+    *I want to create a conflict so i can take a screenshot for the lab!
 	*Hi my name is Ozan.. I am excited about this project becouse we get to do it as a team!
 
     *Greetings, my name is Sam. I am looking forward to help produce this cool project.
