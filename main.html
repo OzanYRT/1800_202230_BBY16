@@ -4,6 +4,7 @@
 <head>
     <title>LandingPage</title>
     <meta name="LandingPage Layout" content="CyberScam 2022">
+    <link rel="stylesheet" href="./styles/style.css">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -33,6 +34,7 @@
     <!------------------------------>
     <!-- Your HTML Layout go here -->
     <!------------------------------>
+    <!-- Navbar-->
     <div class="pos-f-t">
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
@@ -46,6 +48,15 @@
         </button>
       </nav>
     </div>
+    <!--Content-->
+    <h1>Quiz on Important Facts</h1>
+<div class="quiz-container">
+  <div id="quiz"></div>
+</div>
+<button id="previous">Previous Question</button>
+<button id="next">Next Question</button>
+<button id="submit">Submit Quiz</button>
+<div id="results"></div>
   
       <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
@@ -180,6 +191,7 @@
     <script src="./scripts/firebaseAPI_BBY16.js"></script>
     <script src="./scripts/skeleton.js"></script>
     <script src="./scripts/authentication.js"></script>
+    <script src="./scripts/quiz copy.js"></script>
 
 </body>
 
