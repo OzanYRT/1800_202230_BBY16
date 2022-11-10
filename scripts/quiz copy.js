@@ -57,7 +57,8 @@
         // if answer is correct
         if(userAnswer === currentQuestion.correctAnswer){
           // add to the number of correct answers
-          numCorrect++;
+          //changed score from +1 to +50
+          numCorrect = numCorrect + 50;
   
           // color the answers green
           answerContainers[questionNumber].style.color = 'lightgreen';
@@ -66,11 +67,21 @@
         else{
           // color the answers red
           answerContainers[questionNumber].style.color = 'red';
+          numCorrect = numCorrect - 20;
         }
       });
   
       // show number of correct answers out of total
-      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+      resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50}`;
+      if(numCorrect < 50){
+        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , You are Dumb :)`;
+      }else if(numCorrect < 100){
+        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , Not bad kiddo`;
+      }else if(numCorrect < 150){
+        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , Good job`;
+      }else if(numCorrect == 200){
+        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , You are a genius`;
+      }
     }
   
     function showSlide(n) {
@@ -107,33 +118,44 @@
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
-        question: "Who invented JavaScript?",
+        question: "What is Ozan's fav color?",
         answers: {
-          a: "Douglas Crockford",
-          b: "Sheryl Sandberg",
-          c: "Brendan Eich"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "Which one of these is a JavaScript package manager?",
-        answers: {
-          a: "Node.js",
-          b: "TypeScript",
-          c: "npm"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "Which tool can you use to ensure code quality?",
-        answers: {
-          a: "Angular",
-          b: "jQuery",
-          c: "RequireJS",
-          d: "ESLint"
+          a: "Black",
+          b: "Blue",
+          c: "Green",
+          d: "Sukh"
         },
         correctAnswer: "d"
-      }
+      },
+      {
+        question: "What is Ozan's fav programming language",
+        answers: {
+          a: "Nothing, Ozan hates studying give me more overwatch",
+          b: "Java, because literally that's the only language we are truly learning",
+          c: "JavaScript, bcz i dunno"
+        },
+        correctAnswer: "b"
+      },
+      {
+        question: "What is Ozan's fav game",
+        answers: {
+          a: "Elden Ring",
+          b: "Elden Ring",
+          c: "Elden Ring",
+          d: "Elden Ring"
+        },
+        correctAnswer: "a" && "b" && "c" && "d"
+      },
+      {
+      question: "What is Ozan's lastname?",
+      answers: {
+        a: "Yurtsisigi",
+        b: "Yurtisigi",
+        c: "Yurtsigi",
+        d: "I'm Ozan"
+      },
+      correctAnswer: "b"
+    }
     ];
   
     // Kick things off
