@@ -144,7 +144,7 @@
           c: "Elden Ring",
           d: "Elden Ring"
         },
-        correctAnswer: "a" && "b" && "c" && "d"
+        correctAnswer: "a",
       },
       {
       question: "What is Ozan's lastname?",
