@@ -33,7 +33,19 @@ function insertName() {
 
 insertName();
 
+function readQuote() {
+    db.collection("quotes").doc("tuesday")                                                      //name of the collection and documents should matach excatly with what you have in Firestore
+      .onSnapshot(tuesdayDoc => {                                                               //arrow notation
+           console.log("current document data: " + tuesdayDoc.data());                          //.data() returns data object
+           document.getElementById("quote-goes-here").innerHTML = tuesdayDoc.data().quote;      //using javascript to display the data on the right place
+           
+           //Here are other ways to access key:value data fields
+           //$('#quote-goes-here').text(tuesdayDoc.data().quote);                                       //using jquery object dot notation
+           //$("#quote-goes-here").text(tuesdayDoc.data()["quote"]);                                    //using json object indexing
+      })
+}
 
+readQuote();        //calling the function
 // insertName(); //run the function
 
 
@@ -69,23 +81,5 @@ insertName();
 // }
 
 // displayCards("hikes");
-
-
-
-
-function createScoreBoard() {
-    firebase.auth().onAuthStateChanged(user => {
-        // Check if a user is signed in:
-        if (user) {
-            console.log(user.uid);
-            console.log(user.displayName);
-            user_Name = user.displayName;
-       
-            $("#name-goes-here").text(user_Name); 
-        } else {
-            // No user is signed in.
-        }
-    });
-    }
 
 
