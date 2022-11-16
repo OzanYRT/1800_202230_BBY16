@@ -1,4 +1,29 @@
+
+var numCorrect = 0;
+
+var finalScore;
+
+function insertName() {
+  firebase.auth().onAuthStateChanged(user => {
+      // Check if a user is signed in:
+      if (user) {
+          // Do something for the currently logged-in user here: 
+          console.log(user.uid);
+          console.log(user.displayName);
+          user_Name = user.displayName;
+
+          //method #1:  insert with html only
+          //document.getElementById("name-goes-here").innerText = user_Name;    //using javascript
+          //method #2:  insert using jquery
+          $("#name-goes-here").text(user_Name); //using jquery
+
+      } else {
+          // No user is signed in.
+      }
+  });
+}
 (function(){
+       finalScore = numCorrect;
     // Functions
     function buildQuiz(){
       // variable to store the HTML output
@@ -37,14 +62,14 @@
       // finally combine our output list into one string of HTML and put it on the page
       quizContainer.innerHTML = output.join('');
     }
-  
+    
     function showResults(){
   
       // gather answer containers from our quiz
       const answerContainers = quizContainer.querySelectorAll('.answers');
   
       // keep track of user's answers
-      let numCorrect = 0;
+      
   
       // for each question...
       myQuestions.forEach( (currentQuestion, questionNumber) => {
@@ -69,6 +94,7 @@
           answerContainers[questionNumber].style.color = 'red';
           numCorrect = numCorrect - 20;
         }
+        finalScore = numCorrect;
       });
   
       // show number of correct answers out of total
@@ -116,6 +142,7 @@
     const quizContainer = document.getElementById('quiz');
     const resultsContainer = document.getElementById('results');
     const submitButton = document.getElementById('submit');
+    
     const myQuestions = [
       {
         question: "What is Ozan's fav color?",
@@ -144,7 +171,7 @@
           c: "Elden Ring",
           d: "Elden Ring"
         },
-        correctAnswer: "a",
+        correctAnswer: "c",
       },
       {
       question: "What is Ozan's lastname?",
@@ -172,7 +199,36 @@
   
     // Event listeners
     submitButton.addEventListener('click', showResults);
+    submitButton.addEventListener('click', saveResult)
     previousButton.addEventListener("click", showPreviousSlide);
     nextButton.addEventListener("click", showNextSlide);
+
+    
   })();
+
+  function saveResult(){
+    firebase.auth().onAuthStateChanged(user => {
+      // Check if a user is signed in:
+      if (user) {
+          // Do something for the currently logged-in user here: 
+          console.log(user.uid);
+          console.log(user.displayName);
+          user_Name = user.displayName;
+          console.log(numCorrect);
+          db.collection("users").doc(user.uid).set({
+            name: user.displayName,
+            score: finalScore
+          }).then(function(){
+            console.log("Score updated!");
+          });
+
+      } else {
+          // No user is signed in.
+      }
+  });
+  }
+
+  
+
+
   

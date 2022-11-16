@@ -1,43 +1,57 @@
-function checkHighScore(score) {
-    const highScores = JSON.parse(localStorage.getItem(HIGH_SCORES)) ?? [];
-    const lowestScore = highScores[NO_OF_HIGH_SCORES - 1]?.score ?? 0;
-    
-    if (score > lowestScore) {
-      saveHighScore(score, highScores); // TODO
-      showHighScores(); // TODO
-    }
-  }
 
-  function saveHighScore(score, highScores) {
-    const name = prompt('You got a highscore! Enter name:');
-    const newScore = { score, name };
-    
-    // 1. Add to list
-    highScores.push(newScore);
-  
-    // 2. Sort the list
-    highScores.sort((a, b) => b.score - a.score);
-    
-    // 3. Select new list
-    highScores.splice(NO_OF_HIGH_SCORES);
-    
-    // 4. Save to local storage
-    localStorage.setItem(HIGH_SCORES, JSON.stringify(highScores));
-  };
+function insertName() {
+  firebase.auth().onAuthStateChanged(user => {
+      // Check if a user is signed in:
+      if (user) {
+          // Do something for the currently logged-in user here: 
+          console.log(user.uid);
+          console.log(user.displayName);
+          user_Name = user.displayName;
 
-  const highScoreList = document.getElementById(HIGH_SCORES);
+          //method #1:  insert with html only
+          //document.getElementById("name-goes-here").innerText = user_Name;    //using javascript
+          //method #2:  insert using jquery
+          $("#name-goes-here").text(user_Name); //using jquery
 
-highScoreList.innerHTML = highScores.map((score) => 
-  `<li>${score.score} - ${score.name}`
-);
+      } else {
+          // No user is signed in.
+      }
+  });
+}
 
-function showHighScores() {
-    const highScores = JSON.parse(localStorage.getItem(HIGH_SCORES)) ?? [];
-    const highScoreList = document.getElementById(HIGH_SCORES);
-    
-    highScoreList.innerHTML = highScores
-      .map((score) => `<li>${score.score} - ${score.name}`)
-      .join('');
-  }
+insertName();
 
-  saveHighScore();
+var score = 0;
+
+function addScore(){
+  score = score + 1;
+
+  document.getElementById("score").innerHTML = score;
+
+}
+
+// function save(){
+//   firebase.auth().onAuthStateChanged(user => {
+//     if (user) {
+//         console.log(user.uid);
+//         console.log(user.displayName);
+//         user_Name = user.displayName;
+
+//         user_name = user.displayName;
+
+//         $("#name-goes-here").text(user_Name);
+
+//         db.collections("users).doc(user.uid).add({
+//           score : score,
+//           purpose: "Adding Score"
+//         })
+
+//     }
+//   ;
+
+  // firebase.database().ref("/").child(user_name).update({
+  //   score : score,
+  //   purpose: "Adding Score"
+  // })
+// }
+save();
