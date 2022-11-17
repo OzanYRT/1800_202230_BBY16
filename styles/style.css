@@ -2,12 +2,13 @@
 
 body{
 	font-size: 20px;
-	font-family: 'Work Sans', sans-serif;
+	font-family: futureText;
 	color: #333;
   font-weight: 300;
   text-align: center;
   background-color: #f8f6f0;
 }
+
 h1{
   font-weight: 300;
   margin: 0px;
@@ -16,23 +17,27 @@ h1{
   background-color: #444;
   color: #fff;
 }
+
 .question{
   font-size: 30px;
   margin-bottom: 10px;
 }
+
 .answers {
   margin-bottom: 20px;
   text-align: left;
   display: inline-block;
 }
+
 .answers label{
   display: block;
   margin-bottom: 10px;
 }
+
 button{
-  font-family: 'Work Sans', sans-serif;
+  font-family: pixelFontText;
 	font-size: 22px;
-	background-color: #279;
+	background-color: purple;
 	color: #fff;
 	border: 0px;
 	border-radius: 3px;
@@ -40,10 +45,15 @@ button{
 	cursor: pointer;
 	margin-bottom: 20px;
 }
+
 button:hover{
-	background-color: #38a;
+  background-color: white;
+  color: purple;
 }
 
+.nav-item:hover {
+color: white;
+}
 
 
 
@@ -57,12 +67,16 @@ button:hover{
   opacity: 0;
   transition: opacity 0.5s;
 }
+
 .active-slide{
   opacity: 1;
   z-index: 2;
 }
+
 .quiz-container{
   position: relative;
   height: 200px;
   margin-top: 40px;
 }
+
+
