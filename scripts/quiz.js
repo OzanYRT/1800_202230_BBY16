@@ -152,7 +152,7 @@ function insertName() {
           c: "Green",
           d: "Sukh"
         },
-        correctAnswer: "d"
+        correctAnswer: "c"
       },
       {
         question: "What is Ozan's fav programming language",
@@ -171,7 +171,7 @@ function insertName() {
           c: "Elden Ring",
           d: "Elden Ring"
         },
-        correctAnswer: "c",
+        correctAnswer: "b",
       },
       {
       question: "What is Ozan's lastname?",
