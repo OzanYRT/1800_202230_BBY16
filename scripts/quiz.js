@@ -155,6 +155,16 @@ function insertName() {
         correctAnswer: "c"
       },
       {
+        question: "What is a cyber scam?",
+        answers: {
+          a: "potato",
+          b: "b e a n s",
+          c: "the IRS",
+          d: "A scam"
+        },
+        correctAnswer: "d"
+      },
+      {
         question: "What is Ozan's fav programming language",
         answers: {
           a: "Nothing, Ozan hates studying give me more overwatch",

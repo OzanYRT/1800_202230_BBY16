@@ -4,7 +4,6 @@
     margin-right: 1rem;
     margin-left: 2rem;
     font-size: 2rem;
-    text-decoration: none;
     white-space: nowrap;
     font-family: pixelFontTitle;
     color:white;
@@ -27,7 +26,18 @@
     display: block;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    transition: color 1s ease-in-out, background-color 2s ease-in-out, border-color 2s ease-in-out;
+    color: white;
+  }
+
+  .display-5{
+    background-color:rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+
+
+  .btn {
+    background-color:rgba(0, 0, 0, 0.5);
+    color: white;
   }
 
   button {
@@ -42,9 +52,12 @@
     font-weight: 400;
     line-height: 1.5;
     color: white;
-    background-color: darkgrey;
+    background-color: black;
     background-image:url(https://i.pinimg.com/originals/bc/87/e5/bc87e5124f8d2cfe810d403adc96ad01.gif);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
