@@ -37,6 +37,12 @@
     <link rel="stylesheet" href="./styles/my_bootstrap.css" />
   </head>
 
+  <style>
+    body{
+      background-image:url(/images/blurredBG.gif);
+    }
+  </style>
+
   <body>
     <!------------------------------>
     <!-- Your HTML Layout go here -->
@@ -67,7 +73,7 @@
             <a class="nav-link" href="info.html">Info</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="highscore.html" style="color:pink">[Highscore]</a>
+            <a class="nav-link" href="highscore.html" style="color:pink">[Leaderboard]</a>
           </li>
         </ul>
       </div>
@@ -95,9 +101,9 @@
     </template>
     <br><br>
     <div class="display-5">
-      <p>Leaderboard</p>
+      <p style="color:lightpink">Leaderboard</p>
     </div>
-    <div id="highscore"></div>
+    <div id="highscore" class="display-5"></div>
     
 
     <!-- Footer -->

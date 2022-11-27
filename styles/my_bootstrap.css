@@ -7,6 +7,18 @@
     white-space: nowrap;
     font-family: pixelFontTitle;
     color:white;
+    transition: 0.25s;
+  }
+
+  .navbar-brand:hover{
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    font-size: 2rem;
+    white-space: nowrap;
+    font-family: pixelFontTitle;
+    color:rgb(141, 240, 241);
   }
 
   .navbar {
@@ -20,24 +32,44 @@
     font-size: 1.5rem;
     font-family: pixelFontText;
     color: white;
+    transition: 0.25s;
   }
 
   .nav-link {
+    text-align: center;
+    font-size: 25px;
     display: block;
     padding: 0.5rem 1rem;
     text-decoration: none;
     color: white;
+    transition: 0.25s;
+  }
+
+  .nav-link:hover {
+    text-align: center;
+    font-size: 24px;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: pink;
   }
 
   .display-5{
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.80);
     text-align: center;
   }
 
 
   .btn {
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.8);
     color: white;
+    transition: 0.25s;
+  }
+
+  .btn:hover {
+    background-color:rgba(0, 0, 0, 0.5);
+    color: rgb(246, 109, 132);
+    font-size: 27px;
   }
 
   button {
@@ -53,13 +85,17 @@
     line-height: 1.5;
     color: white;
     background-color: black;
-    background-image:url(https://i.pinimg.com/originals/bc/87/e5/bc87e5124f8d2cfe810d403adc96ad01.gif);
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .quiz{
+    background-color:rgba(0, 0, 0, 1);
   }
 
   @font-face {

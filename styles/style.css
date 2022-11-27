@@ -1,16 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
-html{
-  box-sizing:border-box:
-}
 body{
 	font-size: 20px;
 	font-family: futureText;
 	color: white;
   font-weight: 300;
   text-align: center;
-  background-color: #f8f6f0;
+  background-color: #000000;
 }
+
 
 h1{
   font-weight: 300;
@@ -22,7 +20,7 @@ h1{
 }
 
 .btn{
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(0, 0, 0, 0.25);
   color: white;
 }
 
@@ -31,7 +29,7 @@ span{
 }
 
 .question{
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(0, 0, 0, 0.2);
   font-size: 30px;
   margin-bottom: 10px;
 }
@@ -49,6 +47,14 @@ span{
   display: block;
   margin-bottom: 10px;
   color: white;
+  transition: 0.25s;
+}
+
+.answers label:hover{
+  display: block;
+  text-indent: 10px;
+  margin-bottom: 10px;
+  color: pink;
 }
 
 button{
@@ -67,6 +73,10 @@ button{
 button:hover{
   background-color: white;
   color: purple;
+}
+
+.bgBackground{
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .slide{
@@ -95,4 +105,18 @@ button:hover{
   padding: 0.5rem 1rem;
   text-decoration: none;
   color: white;
+}
+
+.label{
+  color:white;
+  transition: 0.25s;
+}
+
+.label:hover{
+font-size:1px;
+color: pink;
+}
+
+#name-goes-here{
+color: pink;
 }
