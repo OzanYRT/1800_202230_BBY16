@@ -29,7 +29,6 @@ span{
 }
 
 .question{
-  background-color:rgba(0, 0, 0, 0.2);
   font-size: 30px;
   margin-bottom: 10px;
 }
@@ -40,6 +39,8 @@ span{
   text-align: left;
   display: inline-block;
   color: white;
+  
+
   transition: opacity 0.5s;
 }
 
@@ -75,9 +76,6 @@ button:hover{
   color: purple;
 }
 
-.bgBackground{
-  background-color: rgba(0, 0, 0, 0.5);
-}
 
 .slide{
   position: absolute;
@@ -88,6 +86,7 @@ button:hover{
   opacity: 0;
   transition: opacity 0.5s;
   color:white;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .active-slide{
@@ -100,6 +99,7 @@ button:hover{
   height: 200px;
   margin-top: 100px;
 }
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
@@ -117,6 +117,6 @@ font-size:1px;
 color: pink;
 }
 
-#name-goes-here{
-color: pink;
+.name-goes-here{
+color: pink !important;
 }
