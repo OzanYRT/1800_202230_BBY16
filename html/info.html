@@ -2,19 +2,20 @@
 <html lang="en">
 
 <head>
-    <title>Quiz Page</title>
+    <title>Info Page</title>
     <meta name="LandingPage Layout" content="CyberScam 2022">
-    <link rel="stylesheet" href="./styles/style.css">
-
+    <link rel="stylesheet" href="../styles/slideshow.css">
+    <link rel="icon" type="png" href="/images/img22.png">
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap Library CSS CDN go here -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 
     <!-- Other libraries go here -->
@@ -23,11 +24,11 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script> 
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css"/>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+
     <!-- Link to styles of your own -->
     <!-- <link rel="stylesheet" href="./styles/style.css"> -->
-    <link rel="stylesheet" href="./styles/my_bootstrap.css">
-
+    <link rel="stylesheet" href="../styles/my_bootstrap.css">
 </head>
 
 <style>
@@ -42,7 +43,7 @@
     <!-- Your HTML Layout go here -->
     <!------------------------------>
     <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg" style="background-color: #21081a;">
+    <nav class="navbar navbar-expand-lg" style="background-color:#21081a">
       <a class="navbar-brand">CyberScam 2022</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,35 +51,32 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="main.html">Home</a>
+            <a class="nav-link" href="main.html">Home <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.html">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="info.html">Info</a>
+            <a class="nav-link" href="info.html" style="color:pink">[Info]</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="highscore.html">Highscore</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color:pink">[Quiz]</p>
+            <a class="nav-link" href="highscore.html">Leaderboard</a>
           </li>
         </ul>
       </div>
     </nav>
-    <!--Content-->
-    <h1 style="background-color: rgba(0, 0, 0, 0.5);">Quiz on: <span id="name-goes-here"></span></h1>
-<div class="quiz-container">
-  <br>
-  <div id="quiz"></div>
-</div>
-<br><br>
-<button id="previous">Previous Question</button>
-<button id="next">Next Question</button>
-<button id="submit">Submit Quiz</button>
-<p class="display-5" id="results"></p>
-  
+
+    <br>
+    <br>
+    <h1 class="display-5">A recurring modern problem.</h1>
+    <div class="slideshow">
+      <!-- slideshow content will be loaded here-->
+    </div>
+
+    <main>
+      <p>Insert content here.</p>
+    </main>
+      
       <!-- Footer -->
       <footer class="text-center text-white fixed-bottom" style="background-color: #21081a;">
         <!-- Grid container -->
@@ -86,9 +84,10 @@
         <!-- Grid container -->
       
         <!-- Copyright -->
-        <p style="background-color: rgba(0, 0, 0, 0.2); font-size: 15px">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           © 2022 TotallyLegit ™ (Background GIF credit: UndertokerGaming)
-        </p>
+          <a class="text-white" href="https://mdbootstrap.com/"></a>
+        </div>
         <!-- Copyright -->
       </footer>
 <!-- Footer -->
@@ -100,11 +99,11 @@
 
     <!-- Link to scripts of your own -->
     <!-- <script src="./scripts/script.js"></script> -->
-    <script src="./scripts/firebaseAPI_BBY16.js"></script>
-    <script src="./scripts/skeleton.js"></script>
-    <script src="./scripts/main.js"></script>
+    <!-- <script src="./scripts/main.js"></script> -->
+    <script src="../scripts/firebaseAPI_BBY16.js"></script>
+    <script src="../scripts/skeleton.js"></script>
     <!-- <script src="./scripts/authentication.js"></script> -->
-    <script src="./scripts/quiz.js"></script>
+    <script src="../scripts/slideshow.js"></script>
 
 </body>
 

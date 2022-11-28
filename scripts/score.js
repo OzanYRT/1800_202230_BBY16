@@ -20,19 +20,6 @@ function insertName() {
   });
 }
 
-// function high(){
-//   firebase.auth().onAuthStateChanged(user => {
-//   db.collection("users").doc(user.uid)
-//   .onSnapshot(nameDoc => {
-//     console.log("current doc data: " + nameDoc.data().name);
-//     document.getElementById("name-goes-here").innerHTML = "User name: " + nameDoc.data().name;
-//     console.log("current doc data: " + nameDoc.data().score);
-//     document.getElementById("score-goes-here").innerHTML = "User score: " + nameDoc.data().score;
-//   })
-// });
-// }
-
-// high();
 
 insertName();
 

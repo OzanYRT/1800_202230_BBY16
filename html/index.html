@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-    <title>Login Page</title>
+    <title>Landing Page</title>
     <meta name="LandingPage Layout" content="CyberScam 2022">
     <link rel="icon" type="png" href="/images/img22.png">
-    
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap Library CSS CDN go here -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 
     <!-- Other libraries go here -->
@@ -23,12 +23,14 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script> 
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css"/>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
 
     <!-- Link to styles of your own -->
     <!-- <link rel="stylesheet" href="./styles/style.css"> -->
-    <link rel="stylesheet" href="./styles/my_bootstrap.css">
+    <link rel="stylesheet" href="../styles/my_bootstrap.css">
 
+    
 </head>
 
 <style>
@@ -51,30 +53,41 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="main.html">Home <span class="sr-only"></span></a>
+            <a class="nav-link" href="index.html" style="color:pink">[Landing Page]</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.html" style="color:pink">[Login]</a>
+            <a class="nav-link" href="#" style="color: gray">Main</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="info.html">Info</a>
+            <a class="nav-link" href="#" style="color: gray">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="highscore.html">Leaderboard</a>
+            <a class="nav-link" href="#" style="color: gray">Info</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: gray">Leaderboard</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <br><br>
-    <div class="display-5"><br>
-    <p>Sign-In to save your points.</p>
-    <div id="firebaseui-auth-container"></div>
-    <div id="loader">Loading...</div>
-    <br>
-    </div>
+    
 
-      
+
+      <div class="px-4 py-5 my-5 text-center">
+        <div class="style fade-in">
+        <h1 class="display-5">Welcome to Cyberscam 2022.</h1>
+        </div>
+        <p class="bgBorder">Here you can learn more about Cyber-scams and learn how to avoid them. 
+          Take the quiz to test your knowledge on cyber-scams, or view our info page to see facts 
+          about cyber-scams and more!</p>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Log-In to save your data later.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="login.html" class="btn btn-lg px-4" role="button">Log in</a>
+          </div>
+        </div>
+      </div>
       
       <!-- Footer -->
       <footer class="text-center text-white fixed-bottom" style="background-color: #21081a;">
@@ -98,11 +111,10 @@
 
     <!-- Link to scripts of your own -->
     <!-- <script src="./scripts/script.js"></script> -->
-    <script src="./scripts/firebaseAPI_BBY16.js"></script>
-    <script src="./scripts/skeleton.js"></script>
-    <script src="./scripts/main.js"></script>
-    <script src="./scripts/authentication.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="../scripts/firebaseAPI_BBY16.js"></script>
+    <script src="../scripts/skeleton.js"></script>
+    <script src="../scripts/index.js"></script>
+    
 
 
 </body>

@@ -14,11 +14,11 @@
                 //load the CSS file for the slideshow
                 let link = document.createElement('link');
                 link.rel = 'stylesheet';
-                link.href = './slideshow.css';
+                link.href = '../slideshow.css';
                 document.head.appendChild(link);
                 
                 //get the slideshow content
-                let url = './scripts/slideshow.json';
+                let url = '../scripts/slideshow.json';
                 fetch(url)
                 .then((response)=>{
                     return response.json();
