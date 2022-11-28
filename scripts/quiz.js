@@ -145,12 +145,12 @@ function insertName() {
     
     const myQuestions = [
       {
-        question: "What is Ozan's fav color?",
+        question: "Who is the most susceptible to Cyber-Scams?",
         answers: {
-          a: "Black",
-          b: "Blue",
-          c: "Green",
-          d: "Sukh"
+          a: "Children",
+          b: "Teenagers",
+          c: "Adults",
+          d: "Seniors"
         },
         correctAnswer: "c"
       },
@@ -184,6 +184,36 @@ function insertName() {
         correctAnswer: "b",
       },
       {
+        question: "What is Ozan's lastname?",
+        answers: {
+          a: "Yurtsisigi",
+          b: "Yurtisigi",
+          c: "Yurtsigi",
+          d: "I'm Ozan"
+        },
+        correctAnswer: "b"
+      },
+      {
+        question: "What is Ozan's lastname?",
+        answers: {
+          a: "Yurtsisigi",
+          b: "Yurtisigi",
+          c: "Yurtsigi",
+          d: "I'm Ozan"
+        },
+        correctAnswer: "b"
+      },
+      {
+        question: "What is Ozan's lastname?",
+        answers: {
+          a: "Yurtsisigi",
+          b: "Yurtisigi",
+          c: "Yurtsigi",
+          d: "I'm Ozan"
+        },
+        correctAnswer: "b"
+      },
+      {
       question: "What is Ozan's lastname?",
       answers: {
         a: "Yurtsisigi",
@@ -193,6 +223,7 @@ function insertName() {
       },
       correctAnswer: "b"
     }
+
     ];
   
     // Kick things off
