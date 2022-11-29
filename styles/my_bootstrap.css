@@ -1,3 +1,5 @@
+/* This css folder is everything we edited to overwrite bootstrap library css */
+
 .navbar-brand {
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
@@ -58,8 +60,6 @@
     background-color:rgba(0, 0, 0, 0.80);
     text-align: center;
   }
-
-
   .btn {
     background-color:rgba(0, 0, 0, 0.8);
     color: white;
@@ -70,6 +70,12 @@
     background-color:rgba(0, 0, 0, 0.5);
     color: rgb(246, 109, 132);
     font-size: 27px;
+  }
+
+  h2{
+    background-color:rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    text-align: center;
   }
 
   button {
@@ -99,6 +105,9 @@
     text-align: center;
   }
 
+  .p-4{
+    height: 5px;
+  }
   @font-face {
     font-family: pixelFontText;
     src: url(pixelFontText.ttf);

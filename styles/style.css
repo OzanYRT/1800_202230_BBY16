@@ -30,17 +30,19 @@ span{
 
 .question{
   font-size: 30px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 2%;
 }
 
+.highscore {
+margin-bottom: 15%;
+}
 
 .answers {
   margin-bottom: 20px;
   text-align: left;
   display: inline-block;
   color: white;
-  
-
   transition: opacity 0.5s;
 }
 
@@ -80,8 +82,10 @@ button:hover{
 .slide{
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: -40%;
   width: 100%;
+  height: 160%;
+  margin-bottom: 10px;
   z-index: 1;
   opacity: 0;
   transition: opacity 0.5s;
@@ -120,7 +124,6 @@ color: pink;
 .name-goes-here{
 color: pink !important;
 }
-
 
 
 .fade-in {

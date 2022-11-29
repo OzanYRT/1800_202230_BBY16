@@ -2,7 +2,7 @@
     const slideshow = {
         items: [],
         timmy: 0,
-        delay: 3000,
+        delay: 4000,
         init: function(){
             //check for the slideshow container div
             if( document.querySelector('.slideshow')){

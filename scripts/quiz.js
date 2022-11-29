@@ -100,13 +100,13 @@ function insertName() {
       // show number of correct answers out of total
       resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50}`;
       if(numCorrect < 50){
-        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , You are Dumb :)`;
+        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , May want to read more.`;
       }else if(numCorrect < 100){
-        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , Not bad kiddo`;
+        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , Not bad!`;
       }else if(numCorrect < 150){
-        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , Good job`;
+        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , Good job.`;
       }else if(numCorrect == 200){
-        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , You are a genius`;
+        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , Excellent. You know your stuff!`;
       }
     }
   
@@ -147,81 +147,41 @@ function insertName() {
       {
         question: "Who is the most susceptible to Cyber-Scams?",
         answers: {
-          a: "Children",
-          b: "Teenagers",
-          c: "Adults",
-          d: "Seniors"
+          a: "Children aged (8-12)",
+          b: "Teenagers aged (13-17)",
+          c: "Adults aged (18-24+)",
+          d: "Seniors aged (60+)"
         },
         correctAnswer: "c"
       },
       {
         question: "What is a cyber scam?",
         answers: {
-          a: "potato",
-          b: "b e a n s",
-          c: "the IRS",
-          d: "A scam"
+          a: "When someone upsells COD MW for $141.",
+          b: "A scam in which someone pawns your cellphone for 2$.",
+          c: "An physical scam that involves primarily thieving cellphones.",
+          d: "A cyber crime that involves deception or fraud online."
         },
         correctAnswer: "d"
       },
       {
-        question: "What is Ozan's fav programming language",
+        question: "Someone sent you an email that doesn't look \r\nreal. What might this be?",
         answers: {
-          a: "Nothing, Ozan hates studying give me more overwatch",
-          b: "Java, because literally that's the only language we are truly learning",
-          c: "JavaScript, bcz i dunno"
+          a: "Phablets",
+          b: "Phishing",
+          c: "Pharming"
         },
         correctAnswer: "b"
       },
       {
-        question: "What is Ozan's fav game",
-        answers: {
-          a: "Elden Ring",
-          b: "Elden Ring",
-          c: "Elden Ring",
-          d: "Elden Ring"
-        },
-        correctAnswer: "b",
-      },
-      {
-        question: "What is Ozan's lastname?",
-        answers: {
-          a: "Yurtsisigi",
-          b: "Yurtisigi",
-          c: "Yurtsigi",
-          d: "I'm Ozan"
-        },
-        correctAnswer: "b"
-      },
-      {
-        question: "What is Ozan's lastname?",
-        answers: {
-          a: "Yurtsisigi",
-          b: "Yurtisigi",
-          c: "Yurtsigi",
-          d: "I'm Ozan"
-        },
-        correctAnswer: "b"
-      },
-      {
-        question: "What is Ozan's lastname?",
-        answers: {
-          a: "Yurtsisigi",
-          b: "Yurtisigi",
-          c: "Yurtsigi",
-          d: "I'm Ozan"
-        },
-        correctAnswer: "b"
-      },
-      {
-      question: "What is Ozan's lastname?",
+      question: "You've been sent a deal from a store that looks too \"good\". What do you check about them first?",
       answers: {
-        a: "Yurtsisigi",
-        b: "Yurtisigi",
-        c: "Yurtsigi",
-        d: "I'm Ozan"
+        a: "Their postal address",
+        b: "Their customer reviews",
+        c: "Their company's registration status",
+        d: "Their product previews"
       },
-      correctAnswer: "b"
+      correctAnswer: "c"
     }
 
     ];

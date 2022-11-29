@@ -1,8 +1,8 @@
 {"items":[
-    {"title":"Phishing", "img": "", "msg":"Lorem ipsum"},
-    {"title":"Identity Fraud", "img": "", "msg": "OZAN "},
-    {"title":"Pharming", "img": "", "msg": "OZAN "},
-    {"title":"Holiday Fraud", "img": "", "msg": "OZAN "},
-    {"title":"Digital Extortion", "img": "", "msg": "OZAN "},
-    {"title":"Ticket Fraud", "img": "", "msg": "OZAN "}
+    {"title":"Phishing", "img": "", "msg":"\"I accepted this email that looked authentic, but now my life savings\n are down the drain stolen!\""},
+    {"title":"Identity Fraud", "img": "", "msg": "\"After giving my info on this one site, I've seen my \npersonal info being used without my will.\""},
+    {"title":"Pharming", "img": "", "msg": "\"I clicked this link on a secure website, and it brought \nme to this fake one. What is real anymore?\""},
+    {"title":"Holiday Fraud", "img": "", "msg": "\"I booked a hotel suite in Turkey, but the hotel never existed!\""},
+    {"title":"Digital Extortion", "img": "", "msg": "\"My personal info was stolen on a website, and now I'm being \nblackmailed into giving them assets!\""},
+    {"title":"Ticket Fraud", "img": "", "msg": "\"I tried to get a ticket at the Justin Bieber/Beethoven concert, but\ninstead I was robbed of $400!\""}
 ]}

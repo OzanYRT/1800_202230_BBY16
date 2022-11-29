@@ -33,29 +33,36 @@
 }
 
 .slideshow-item:nth-child(1){
-    background-color: pink;
+    background-color: pink; 
+    background-repeat: no-repeat;
     text-align: center;
+    color: black;
 }
 .slideshow-item:nth-child(2){
     background-repeat: no-repeat;
     background-color: lightblue;
     text-align: center;
+    color: black;
 }
 .slideshow-item:nth-child(3){
     background-color: hsl(180, 40%, 80%);
     text-align: center;
+    color: black;
 }
 .slideshow-item:nth-child(4){
     background-color: hsl(240, 40%, 80%);
     text-align: center;
+    color: black;
 }
 .slideshow-item:nth-child(5){
     background-color: hsl(300, 40%, 80%);
     text-align: center;
+    color: black;
 }
 .slideshow-item:nth-child(6){
     background-color: hsl(360, 40%, 80%);
     text-align: center;
+    color: black;
 }
 .slideshow img{
     float:left;
