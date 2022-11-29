@@ -179,19 +179,11 @@ color: pink !important;
 }
 
 @media only screen and (max-width: 550px){
-#results{
-
-}
 
 .quiz-container{
   position: sticky;
   height: 500fr;
   margin-top: 100px;
-}
-
-#quiz{
-
-
 }
 
 #previous{
@@ -210,4 +202,27 @@ margin-top: 150px;
 
 }
 
+@media only screen and (max-width: 325px){
+
+  .quiz-container{
+    position: sticky;
+    height: 500fr;
+    margin-top: 100px;
+  }
+  
+  #previous{
+  position: sticky;
+  margin-top: 800px;
+  }
+  
+  #next{
+  position: sticky;
+  margin-top: 400px;
+  }
+  
+  #footer{
+    visibility: hidden;
+  }
+
+}
   
