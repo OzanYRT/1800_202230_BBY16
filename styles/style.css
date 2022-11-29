@@ -78,7 +78,6 @@ button:hover{
   color: purple;
 }
 
-
 .slide{
   position: absolute;
   left: 0px;
@@ -178,3 +177,37 @@ color: pink !important;
     opacity:1;
   }
 }
+
+@media only screen and (max-width: 550px){
+#results{
+
+}
+
+.quiz-container{
+  position: sticky;
+  height: 500fr;
+  margin-top: 100px;
+}
+
+#quiz{
+
+
+}
+
+#previous{
+position: sticky;
+margin-top: 100%;
+}
+
+#next{
+position: sticky;
+margin-top: 150px;
+}
+
+#footer{
+  visibility: hidden;
+}
+
+}
+
+  
