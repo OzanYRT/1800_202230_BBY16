@@ -69,12 +69,12 @@
     margin: 0 1rem 0 0;
 }
 .slideshow h1{
-    font-size: 3rem;
+    font-size: 3.5vw;
     line-height: 4rem;
 }
 .slideshow p{
-    font-size: 1rem;
-    line-height: 1.5;
-    height: 4.5rem;
+    font-size: 2.5vw;
+    line-height: 0.8;
+    height: 10rem;
     overflow: hidden;
 }

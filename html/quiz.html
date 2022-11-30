@@ -60,7 +60,7 @@
             <a class="nav-link" href="info.html">Info</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="highscore.html">Highscore</a>
+            <a class="nav-link" href="highscore.html">Leaderboard</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" style="color:pink">[Quiz]</p>
@@ -70,15 +70,24 @@
     </nav>
     
     <!--Content-->
-    <h1 style="background-color: rgba(0, 0, 0, 0.5);">Quiz taker test: <span id="name-goes-here"></span></h1>
-    <p class="display-5" id="results" style="font-size: 25px;"></p>
-    <div class="quiz-container">
+    <h1 style="background-color: rgba(0, 0, 0, 0.5); font-size: 2vw;">Quiz taker test: <span id="name-goes-here"></span></h1>
+    <p class="display-5" id="results" style="font-size: 3vw;"></p>
+    <div class="quiz-container" style="margin-bottom: 10%;">
   <div id="quiz"></div>
 </div>
-<br><br>
+
 <button id="previous">Previous Question</button>
-<button id="next">Next Question</button>
-<a href="highscore.html"><button id="submit">Submit Quiz</button></a>
+<button id="next" style="margin-bottom: 20%">Next Question</button>
+<a href="#"><button id="submit" style="margin-bottom: 20%;" onclick="JavaScript:timedRedirect()">Submit Quiz</button></a>
+
+<!--Timed redirection to leaderboard-->
+<script>
+  redirectTime = "1500";
+  redirectURL = "highscore.html";
+  function timedRedirect() {
+    setTimeout("location.href = redirectURL;",redirectTime);
+  }
+  </script>
 
       <!-- Footer -->
       <footer class="text-center text-white fixed-bottom" id="footer" style="background-color: #21081a;">
@@ -86,7 +95,7 @@
         <!-- Grid container -->
       
         <!-- Copyright -->
-        <p style="background-color: rgba(0, 0, 0, 0.2); font-size: 15px">
+        <p style="background-color: rgba(0, 0, 0, 0.2); font-size: 1.5vw;">
           © 2022 TotallyLegit ™ (Background GIF credit: UndertokerGaming)
         </p>
         <!-- Copyright -->

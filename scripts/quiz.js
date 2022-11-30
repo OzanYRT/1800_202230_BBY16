@@ -100,13 +100,14 @@ function insertName() {
       // show number of correct answers out of total
       resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50}`;
       if(numCorrect < 50){
-        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , May want to read more.`;
+        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , May want to read more. Redirecting you to the leaderboard.`;
       }else if(numCorrect < 100){
-        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , Not bad!`;
+        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , Not bad! Redirecting you to the leaderboard.`;
       }else if(numCorrect < 150){
-        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , Good job.`;
+        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , Good job. Redirecting you to the leaderboard.`;
       }else if(numCorrect == 200){
-        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , Excellent. You know your stuff!`;
+        resultsContainer.innerHTML = `Your score is: ${numCorrect} out of ${myQuestions.length * 50} , Flawless. Redirecting you to the leaderboard.`;
+      
       }
     }
   
@@ -159,10 +160,9 @@ function insertName() {
         answers: {
           a: "When someone upsells COD MW for $141.",
           b: "A scam in which someone pawns your cellphone for 2$.",
-          c: "An physical scam that involves primarily thieving cellphones.",
-          d: "A cyber crime that involves deception or fraud online."
+          c: "A cyber crime that involves deception or fraud online."
         },
-        correctAnswer: "d"
+        correctAnswer: "c"
       },
       {
         question: "Someone sent you an email that doesn't look \r\nreal. What might this be?",
