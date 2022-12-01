@@ -53,34 +53,34 @@ It has the following subfolders and files:\
     quiz.html
 
 ├── images                   # Folder for images
-    blurredBG.gif
-    drink1.png
+    blurredBG.gif            <-- Background GIF that we used (credits to Undertoker gaming, the pixel artist who made it).
+    drink1.png               <-- The drink/default images were left here to test image placements as placeholders.
     drink2.png
     drink3.png
-    image.png
-    img22.png
+    image.png                
+    img22.png                <-- PNG for our favicon using the text font downloaded below.
     
 ├── scripts                  # Folder for scripts
-    authentication.js
-    firebaseAPI_BBY16.js
+    authentication.js        <-- JS for our login authentication.
+    firebaseAPI_BBY16.js     <-- JS for our firebase data.
     index.js
     main.js
     quiz.js
     score.js
     script.js
     skeleton.js
-    slideshow.js
+    slideshow.js             <-- JS for our
     slideshow.json
     
 ├── styles                   # Folder for styles
-    bootstrap.css
-    futureText.otf
+    bootstrap.css            <-- This folder was included so that we could rewrite CSS to customize our page to the format we wished.
+    futureText.otf           <-- Fonts downloaded from https://www.dafont.com/hundred-wars.font
     futureTextBold.otf
-    my_bootstrap.css
-    pixelFontText.ttf
-    pixelFontTitle.otf
+    my_bootstrap.css         <-- Our personalized CSS that grabbed bootstrap functions and overrode them.
+    pixelFontText.ttf        <-- Fonts downloaded from https://www.dafont.com/retro-gaming.font
+    pixelFontTitle.otf       
     slideshow.css
-    style.css
+    style.css                <-- Includes the styling for extra CSS and some key misc. functions.
 
 ├── text                     # Unused functions from our previous template.
     footer.html
